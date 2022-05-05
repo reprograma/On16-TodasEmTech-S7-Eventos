@@ -19,4 +19,5 @@
 #### 📝 Async/Await.
 
 
-### Vamos para a aula? 👩‍💻 https://media.giphy.com/media/TRUJ0BJOxOmru/giphy.gif
+### Vamos para a aula? 👩‍💻 
+![alt text] https://media.giphy.com/media/TRUJ0BJOxOmru/giphy.gif
