@@ -20,4 +20,4 @@
 
 
 ### Vamos para a aula? 👩‍💻 
-![alt text] https://media.giphy.com/media/TRUJ0BJOxOmru/giphy.gif
+![alt text] [https://media.giphy.com/media/TRUJ0BJOxOmru/giphy.gif]
