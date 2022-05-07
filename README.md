@@ -1,7 +1,7 @@
 
 # On16-TodasEmTech-S7-Eventos
 
-## Turma Online Todas em Tech - Back-end | Semana 7: Eventos Callback
+## Turma Online Todas em Tech - Back-end | Semana 7: Event Loop, Callbacks, Promises e Async/Await
 
 ## Combinados:
 
@@ -21,4 +21,5 @@
 #### 📝 Async/Await.
 
 
-### Vamos para a aula? 👩‍💻 (https://media.giphy.com/media/TRUJ0BJOxOmru/giphy.gif)
+### Vamos para a aula? 👩‍💻 
+![monophy](https://media.giphy.com/media/TRUJ0BJOxOmru/giphy.gif)
