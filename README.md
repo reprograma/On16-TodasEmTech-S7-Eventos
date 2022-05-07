@@ -24,9 +24,9 @@
 ### Vamos para a aula? 👩‍💻 
 ![monophy](https://media.giphy.com/media/TRUJ0BJOxOmru/giphy.gif)
 
-### Para Casa? 👩‍💻 
+### Para Casa: 👩‍💻 
 
-#### 📝 Faça um fork do repositório, faça o desafio da promessa utilizando async / await, sobe a solução para o git e abra um Pull Request. 
+#### 📝 Faça um fork do repositório, faça o desafio da promessa utilizando async / await, sobe a solução para o git e abra um [Pull Request](https://github.com/grupy-sp/encontros/wiki/Como-sincronizar-o-seu-Fork-com-o-repo-principal) com a solução. 
 #### 📝 O Código está na pasta Para Casa.
 
 
