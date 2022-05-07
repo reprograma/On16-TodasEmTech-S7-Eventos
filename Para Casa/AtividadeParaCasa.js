@@ -1,5 +1,8 @@
 
-/* Desafio para casa:  Transformar a nossa promisse Hell em async_await */
+/* Desafio para casa:  Transformar a nossa promisse Hell em async_await
+Dica de ouro: Vai ter uma das promises que vc não vai precisar usar await
+*/
+
 
 
 function pegarId(){
