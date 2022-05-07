@@ -29,8 +29,18 @@
 #### 📝 Faça um fork do repositório, faça o desafio da promessa utilizando async / await, sobe a solução para o git e abra um Pull Request. 
 #### 📝 O Código está na pasta Para Casa.
 
+
+### Links para estudo 👩‍💻
+### - [Promises](https://medium.com/trainingcenter/entendendo-promises-de-uma-vez-por-todas-32442ec725c2)
+
+### -  [async/await](https://medium.com/balta-io/nodejs-async-await-21ca3636252a)
+
+
 ## Sucesso Amadxs 🥰
 
 
-![monophy]https://user-images.githubusercontent.com/66445871/132948479-b243916d-9fbf-4f84-aec2-07e21374f8e7.gif
+![monophy](https://user-images.githubusercontent.com/66445871/132948479-b243916d-9fbf-4f84-aec2-07e21374f8e7.gif)
+
+
+
 
