@@ -14,6 +14,8 @@
 #### 📝 O que é Node.js;
 #### 📝 O que é programação síncrona;
 #### 📝 Programação assíncrona;
+#### 📝 Event Loop;
+
 #### 📝 Callbacks;
 #### 📝 Promises;
 #### 📝 Async/Await.
