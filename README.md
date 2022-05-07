@@ -28,6 +28,7 @@
 
 #### 📝 Faça um fork do repositório, faça o desafio da promessa utilizando async / await, sobe a solução para o git e abra um [Pull Request](https://github.com/grupy-sp/encontros/wiki/Como-sincronizar-o-seu-Fork-com-o-repo-principal) com a solução. 
 #### 📝 O Código está na pasta Para Casa.
+#### 📝 Dica de ouro: Vai ter uma das promises que vc não vai precisar usar await.
 
 
 ### Links para estudo 👩‍💻
