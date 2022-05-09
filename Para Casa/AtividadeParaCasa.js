@@ -26,7 +26,7 @@ function enviarEmail(corpo, para){
         setTimeout(() => {  
             var deuErro = false;
             if(!deuErro){
-                resolve({time: 6, to: "jenifer@reprograma.com"}) // Promessa OK!
+                resolve({corpo: corpo, to: para}) // Promessa OK!
             }else{
                 reject("Fila cheia") // Foi mal, eu falhei :(
             }
@@ -40,9 +40,10 @@ console.log("Inicio!");
 
 async function principal(){
     let pegaIds = pegarId()
-    let buscarEmail = await buscarEmailNoBanco()
-    let enviaEmail =  await enviarEmail()
-    console.log("Foi!");
+    let buscarEmail = await buscarEmailNoBanco(pegaIds)
+    let enviaEmail =  await enviarEmail('Olá! Teste', buscarEmail)
+    console.log(enviaEmail);
+    console.log('Fim!')
 }
 principal()
 
