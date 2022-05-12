@@ -39,9 +39,9 @@ function enviarEmail(corpo, para){
 console.log("Inicio!");
 
 async function principal(){
-    let pegaIds = pegarId()
+    let pegaIds = await pegarId()
     let buscarEmail = await buscarEmailNoBanco(pegaIds)
-    let enviaEmail =  await enviarEmail('Olá! Teste', buscarEmail)
+    let enviaEmail = enviarEmail('Olá! Teste', buscarEmail)
     console.log(enviaEmail);
     console.log('Fim!')
 }
