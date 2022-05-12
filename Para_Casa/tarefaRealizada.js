@@ -42,9 +42,9 @@ console.log("Foi!");
 
 
 async function organizaEnvio(){
-    const id = pegarId()
+    const id = await pegarId()
     const buscaEmail = await buscarEmailNoBanco(id)
-    const envia = await enviarEmail(buscaEmail)
+    const envia = enviarEmail(buscaEmail)
     console.log(envia)
 }
 
