@@ -27,7 +27,7 @@ function enviarEmail(corpo, para){
     });
 }
 
-function buscarUsuario(){
+/* function buscarUsuario(){
     return new Promise((resolve, reject)=>{
         setTimeout(()=>{
         resolve([
@@ -38,7 +38,7 @@ function buscarUsuario(){
 
    },3000)
 })
-}
+} */
 /* let usuarios = buscarUsuario();
 console.log(usuarios)
  */
@@ -50,7 +50,7 @@ console.log(usuarios)
 
 /* let usuarios = await buscarUsuario();  -> Isso é referente ao than ( Pega essa promise, espera ela
     ser concluida e mostra o resultado dela)/*/
-
+/* 
     async function principal(){
         let usuarios = await buscarUsuario()
         console.log(usuarios)
@@ -59,7 +59,7 @@ console.log(usuarios)
     principal();
 
 
-
+   */
 /*
 // aqui vc pode chamar uma promise dentro de outra(Promisses aninhadas ou Promisse Hell)
 console.log("Inicio!");
@@ -75,3 +75,13 @@ pegarId().then((id) => {
 })
 console.log("Foi!");
 */
+
+async function principal(){
+    let id = await pegarId();
+    let email = await buscarEmailNoBanco(id);
+    enviarEmail('Olá, Reprograma', email).then(() =>{
+    console.log('Email enviado!')
+    }).catch((err)=>
+    console.log(err))}
+    
+ principal();
