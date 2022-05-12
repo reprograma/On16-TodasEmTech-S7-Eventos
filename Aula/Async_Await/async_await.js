@@ -48,7 +48,7 @@ console.log(usuarios)
 }) */
 
 
-/* let usuarios = await buscarUsuario();  -> Isso é referente ao than ( Pega essa promise, espera ela
+/* let usuarios = await buscarUsuario();  -> Isso é referente ao then ( Pega essa promise, espera ela
     ser concluida e mostra o resultado dela)/*/
 
     async function principal(){

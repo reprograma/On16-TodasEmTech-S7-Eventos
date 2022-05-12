@@ -19,7 +19,7 @@ function enviarEmail(corpo, para, callback){
 
 
 console.log("Inicio do envio de email")
-enviarEmail("Olá Seja bem vindxs a Reprograma", "jenifer@reprograma.com", (status, amount, time)=>{
+enviarEmail("Olá Seja bem vindx a Reprograma", "jenifer@reprograma.com", (status, amount, time)=>{
     console.log(`
         Status: ${status}
         ----------------------------
