@@ -42,5 +42,8 @@ Promise é um objeto usado para o processamento assíncrono. As funções assín
 Essas palavras-chave são utilizadas nas promises, melhorando sua execução e sua visualização. Toda função com a palavra-chave *async* torna-se uma função assíncrona, resultando em *promise* ao invés de um valor direto. Já a palavra *await* indica que o JavaScript deve esperar o retorno de uma promise para então continuar a execução.
 
 ## Referências
-https://developer.mozilla.org/pt-BR/docs
-https://blog.betrybe.com/tecnologia/callback/
+- https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/EventLoop
+- https://developer.mozilla.org/pt-BR/docs/Glossary/Callback_function
+- https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise
+- https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Asynchronous/Introducing
+- https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/AsyncFunction
