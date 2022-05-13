@@ -1,10 +1,3 @@
-
-/* Desafio para casa:  Transformar a nossa promisse Hell em async_await
-Dica de ouro: Vai ter uma das promises que vc não vai precisar usar await
-*/
-
-
-
 function pegarId(){
     return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -35,16 +28,19 @@ function enviarEmail(corpo, para){
 }
 
 
-// aqui vc pode chamar uma promise dentro de outra(Promisses aninhadas ou Promisse Hell)
-/* console.log("Inicio!");
-pegarId().then((id) => {
-    buscarEmailNoBanco(id).then((email) => { 
-        enviarEmail("Olá, como vai?",email).then(() => {
-            console.log("Email enviado, para o usuário com id: " + id)
-        }).catch(err => {
-            console.log(err);
-        })
 
-    })
-})
-console.log("Foi!"); */
+async function email(){
+    try{
+        const id = await pegarId()
+        const emailUsuario = await buscarEmailNoBanco(id)
+        let enviarParaUsuario = enviarEmail('Olá usuário', emailUsuario)
+        console.log('Email enviado!')
+
+    } catch(error){
+            console.log(error)
+    }
+
+
+}
+
+email()

@@ -1,47 +1,74 @@
+# Repositório com o resumo dos assuntos passados pela professora Jenifer 👩‍💻
 
-# On16-TodasEmTech-S7-Eventos
+</br>
 
-## Turma Online Todas em Tech - Back-end | Semana 7: Event Loop, Callbacks, Promises e Async/Await
+<span align="center">
 
-## Combinados:
+# <img src="https://user-images.githubusercontent.com/101025726/163484804-691ab689-7347-41e4-8fcc-06011eb830d4.gif" width="150px"> Aprendizado da semana! </h2>
 
-#### 🤚 Levantar a mão pra falar;
-#### 🤷‍♀️ Dúvidas por favor coloquem no chat;
-#### 🎙 Manter o microfone mutado durante a aula.
+</span>
 
-### [Slides da aula](https://docs.google.com/presentation/d/1hik5KVEutK7ec1MHRnNEDy5NikDGC8GP/edit?usp=sharing&ouid=103451384479324478678&rtpof=true&sd=true)
+</br>
 
-## Assuntos em sala: 
+## SÍNCRONA 😉
 
-#### 📝 O que é programação síncrona;
-#### 📝 Programação assíncrona;
-#### 📝 Event Loop;
-#### 📝 Callbacks;
-#### 📝 Promises;
-#### 📝 Async/Await.
+São funções que, quando chamadas, pausam a leitura do código para realizar seu processamento, depois retorna o valor final e continua a execução da linha de código na sequência
+
+</br>
+
+## ASSÍNCRONA 😉
+
+Cria uma leitura paralela, que será executada em segundo plano sem interromper o fluxo principal. Então toda função que depende de alguma execução externa ou possui tempo para retornarem, são executadas em por trás e ao final são retornadas através do Event Loop, tornando possível a continuação do fluxo da aplicação já que não trava o script
+
+</br>
+
+## EVENT LOOP 😉
+
+A fila de eventos (Event Loop) é responsável por enviar novas funções que foram resolvidas de forma assíncrona para a trilha principal de processamento (Call Stack), seguindo a estrutura de dados da fila (Callback Queue) assim mantendo a sequência correta de execução dos eventos/funções.
+
+</br>
+
+## CALLBACK 😉
+
+A função de retorno de chamada geralmente é usada como parâmetro para outra função. A função que recebe a função de retorno de chamada como parâmetro normalmente está buscando dados de um banco de dados, baixando um arquivo, fazendo uma solicitação de API ou concluindo alguma outra tarefa que poderia bloquear a leitura de código por um período de tempo notável.
+
+</br>
+
+## PROMISES 😉
+
+São um padrão de desenvolvimento que visam representar a conclusão de operações assíncronas, ou seja, que não possuem sincronia. Elas são um conceito essencial do JavaScript. Antes das promises existirem, a marioria das funções usavam callbacks. É um padrão de desenvolvimento usados para sincronizar a execução de um programa.Eles descrevem um objeto que atua como um intermediário para um resultado que é, inicialmente, desconhecido devido a sua computação não estar completa no momento da chamada.
+AS promises também foram criadas por conta da organização dos códigos, pois toda vez que um arquivo era lido, ela precisava escrever um outro arquivo e dessa forma executar a função assícrona. O que resultava de um código complexo pra leitura que ficou conhecido como callback hell. Dessa forma o código era melhorado e conseguia se extrair as funções de forma mais simples melhorando a visualização.
+Uma Promise pode assumir quatro estados principais:
+
+| Estado | Significado |
+| --- | --- |
+| Pending | O estado inicial da Promise, ela foi iniciada mas ainda não foi realizada nem rejeitada. |
+| Fulfilled| Sucesso da operação, é uma Promise resolvida.|
+| Rejected | Falha da operação, é o que chamamos de uma Promise rejeitada.|
+| Settled  | É o estado final da Promise, quando ela já sabe se foi resolved ou rejected.|
+
+</br>
+
+## ASYNC/AWAIT 😉
+
+As palavra-chaves async e await facilitam a visualização e tornam a leitura do código assíncrono mais próxima do código síncrono. Toda função que recebe o async se torna uma função assíncrona, que passa a retornar uma promise ao invés de retornar um valor diretamente e espera que a palavra-chave await seja usada para chamar o código assíncrono, o await indica que o JavaScript deve esperar o retorno de uma promise para continuar a execução,se usado de forma correta não altera a performance da aplicação. O await só funciona dentro de funções assíncronas e é colocado na frente de qualquer função que retorne promise para pausar o código até que ela seja resolvida, retornando o valor.
 
 
-### Vamos para a aula? 👩‍💻 
-![monophy](https://media.giphy.com/media/TRUJ0BJOxOmru/giphy.gif)
-
-### Para Casa: 👩‍💻 
-
-#### 📝 Faça um fork do repositório, faça o desafio da promessa utilizando async / await, sobe a solução para o git e abra um [Pull Request](https://github.com/grupy-sp/encontros/wiki/Como-sincronizar-o-seu-Fork-com-o-repo-principal) com a solução. 
-#### 📝 O Código está na pasta Para Casa.
-#### 📝 Dica de ouro: Vai ter uma das promises que vc não vai precisar usar await.
-
-
-### Links para estudo 👩‍💻
-### - [Promises](https://medium.com/trainingcenter/entendendo-promises-de-uma-vez-por-todas-32442ec725c2)
-
-### -  [async/await](https://medium.com/balta-io/nodejs-async-await-21ca3636252a)
-
-
-## Sucesso Amadxs 🥰
-
-
-![monophy](https://user-images.githubusercontent.com/66445871/132948479-b243916d-9fbf-4f84-aec2-07e21374f8e7.gif)
+</br>
+</br>
 
 
 
 
+
+
+<span align="center">
+
+#  Muito obrigada a você que chegou até aqui! </h2>
+
+</span>
+
+</span>
+<div align="center">
+<img src="https://giphy.com/embed/HoffxyN8ghVuw" width="400px" />
+</div>
