@@ -56,3 +56,13 @@ Async e await são keywords que foram introduzidas no ES8 em 2017. Basicamente �
 O motivo pela adição do async/await foi o mesmo da adição das Promises no JavaScript, o callback hell. Só que dessa vez tínhamos o Promise hell, onde ficávamos aninhando Promises dentro de Promises eternamente e isso tornava tudo muito mais difícil de se ler.
 
 A proposta de funções assíncronas é justamente nivelar todo mundo em um único nível
+
+
+🎯 Referências:
+
+* https://github.com/lilitbandeira/ON15-TET-S7-ASSINCJS
+* https://github.com/reprograma/On16-TodasEmTech-S7-Eventos
+* https://medium.com/balta-io/nodejs-async-await-21ca3636252a
+* https://medium.com/trainingcenter/entendendo-promises-de-uma-vez-por-todas-32442ec725c2
+* https://blog.avenuecode.com/callback-hell-promises-and-async/await
+
