@@ -1,6 +1,5 @@
 # Resumo Semanal 7: JavaScript Assíncrono
 
----
 
 1. Programação síncrona e assíncrona:
 
@@ -18,7 +17,7 @@
 
 - Tarefas que não podem ser concluídas no momento são concluídas de forma assíncrona.
 
-- Pode ser feito com a função ~~~setTimeout(callback, milliseconds)~~~, que configura um evento (timeout) para acontecer mais tarde. Por configurar um temporizador, não coloca o retorno de chamada imediatamente na fila do event loop. Apenas quando o temporizador expira o retorno de chamada é colocado no event loop para que algum sinal futuro o capte e o execute.
+- Pode ser feito com a função ```setTimeout(callback, milliseconds)```, que configura um evento (timeout) para acontecer mais tarde. Por configurar um temporizador, não coloca o retorno de chamada imediatamente na fila do event loop. Apenas quando o temporizador expira o retorno de chamada é colocado no event loop para que algum sinal futuro o capte e o execute.
 
 ~~~javascript
 function first() {
@@ -52,9 +51,13 @@ setTimeout(function cb1() {
 console.log("Bye");
 ~~~
 
-###### O Código acima seria executado da seguinte forma:
-
-![gif](https://miro.medium.com/max/1400/1*TozSrkk92l8ho6d8JxqF_w.gif)
+<p align="center">
+  O código acima seria executado da seguinte forma:
+</p>
+  
+<p align="center">
+  <img src="https://miro.medium.com/max/1400/1*TozSrkk92l8ho6d8JxqF_w.gif" alt="Event Loop"/>
+</p>
 
 3. Callbacks:
 
@@ -74,15 +77,15 @@ console.log("Bye");
 
 - Também é uma forma de lidar com a assincronicidade, mas, diferente das callbacks, em que se determina o que será chamado depois, a **promise** retorna, de imediato, uma promessa de que no futuro irá se trazer um valor para aquilo.
 
-- Cria-se uma função que retorna uma ~~~new Promise()~~~ que também passa como argumento uma callback, retornando duas funções _resolve()_ e _reject()_. Então, dada uma promessa, ou se resolve (sucesso da promessa) ou se rejeita (erro da promessa).
+- Cria-se uma função que retorna uma ```new Promise()``` que também passa como argumento uma callback, retornando duas funções _resolve()_ e _reject()_. Então, dada uma promessa, ou se resolve (sucesso da promessa) ou se rejeita (erro da promessa).
 
-- O ~~~then()~~~ ativa a callback quando a promessa for cumprida, e possui como argumento o valor retornado na função ~~~resolve()~~~.
+- O ```then()``` ativa a callback quando a promessa for cumprida, e possui como argumento o valor retornado na função ```resolve()```.
 
 - Vários thens podem ser encadeados caso haja duas ou mais operações assíncronas consecutivas, assim, o valor do primeiro argumento de cada then encadeado será o valor do retorno do anterior.
 
-- O ~~~catch()~~~ ativa a callback quando a promessa for rejeitada, e possui como argumento o valor retornado na ~~~reject()~~~.
+- O ```catch()``` ativa a callback quando a promessa for rejeitada, e possui como argumento o valor retornado na ```reject()```.
 
-- O ~~~finally()~~~ ativa a callback quando a promessa acabar, e possui como argumento, também, o valor retornado na ~~~reject()~~~.
+- O ```finally()``` ativa a callback quando a promessa acabar, e possui como argumento, também, o valor retornado na ```reject()```.
 
 - Com a promise, faz-se o código crescer para baixo o que facilita na manutenção.
 
@@ -121,9 +124,9 @@ readFile("./xFile.txt")
 
 - Basicamente, o async/await é uma forma mais flúida de escrever/ler uma promise e torna a leitura de um código assíncrono mais próxima do código síncrono.
 
-- Ao receber o ~~~async~~~, uma função passa a ser assíncrona que retorna uma promise ao invés de um valor.
+- Ao receber o ```async```, uma função passa a ser assíncrona que retorna uma promise ao invés de um valor.
 
-- Essa função assíncrona espera a palavra-chave ~~~await~~~ ser usada para invocar o código assíncrono. Assim, o **await** é colocado na frente de qualquer função que retorne uma promise e indica que o JavaScript deve esperar o retorno dessa promise para continuar a execução, retornando o valor resultante.
+- Essa função assíncrona espera a palavra-chave ```await``` ser usada para invocar o código assíncrono. Assim, o **await** é colocado na frente de qualquer função que retorne uma promise e indica que o JavaScript deve esperar o retorno dessa promise para continuar a execução, retornando o valor resultante.
 
 - Deve-se ter cuidado, porém, para não utilizar o **await** desnecessariamente para não interromper o fluxo da aplicação.
 
@@ -133,4 +136,6 @@ readFile("./xFile.txt")
 
 --- 
 
-![gif2](https://extra.globo.com/img/4ad/2017/5/22/8/nazare.gif)
+<p align="center">
+  <img src="https://c.tenor.com/YAOhbZ5GZy4AAAAd/nazaré.gif" alt="Gif Nazare"/>
+</p>
