@@ -25,8 +25,8 @@ Promise retorna um método then e outro catch , utilizamos o then para tratar qu
 As promessas são baseadas em eventos temporais e possuem alguns estados que classificam esses eventos:
 
 
-| Estado | Significado ||
-| --- | --- | --- |
+| Estado | Significado |
+| --- | --- |
 | Pending | Estado inicial, quando a promise ainda está em execução - Não resolveu ou rejeitou. |
 | Fulfilled| Quando executou todas as operações com sucesso.|
 | Rejected | Quando a execução finalizou com erro, falhou.|
