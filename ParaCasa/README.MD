@@ -8,4 +8,4 @@ Promises é um objeto que apresenta o resultado de uma operação assíncrona, t
 
 Async/Await simplifica o retorno da promise você pode usar ele ao invés de usar o promisehell
 
-PS: Foi uma semana bem desafiadora, achei um pouco difícil de entender algumas coisas mas depois reassitindo as aulas consgui pegar um pouco do contexto, acredito que com a prática e o passar dos dias vai ficando mais claro.
+PS: Foi uma semana bem desafiadora, achei um pouco difícil de entender algumas coisas mas depois reassitindo as aulas consegui pegar um pouco do contexto, acredito que com a prática e o passar dos dias vai ficando mais claro.
