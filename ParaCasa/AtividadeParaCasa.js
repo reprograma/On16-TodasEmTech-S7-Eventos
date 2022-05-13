@@ -52,23 +52,25 @@ console.log("Foi!");
 
 // [Resolução do desafio]: Transformar a promisse Hell desse arquivo em async_await
 
-// [OBS]: Fiz de duas formas diferentes, a 1ª forma com o código mais limpo e cumprindo as promessas, e 
-// a 2ª forma implementando alguns console.log para retornar as promessas cumpridas no console 
-// de forma mais clara e visual.
+// [OBS]: Abaixo deixei duas formas diferentes, a 1ª forma com o código mais limpo e cumprindo as promessas, e 
+// a 2ª forma implementando alguns console.log para retornar todas promises cumpridas no console 
+// de forma mais clara e visual para melhor entendimento do que está sendo feito. 
 
-// [1ª] forma de transformar a promise hell em async_await
+// [1ª] Forma de transformar a promise hell em async_await (realizada em sala de aula)
 
-async function processosEnvio() {
-    const id = await pegarId()
-    const email = await buscarEmailNoBanco(id)
-    const envia = await enviarEmail(email)
-    console.log(envia)
-    console.log("Enviado com sucesso!!!")
+async function principal() {
+    let id = await pegarId();
+    let email = await buscarEmailNoBanco(id);
+    enviarEmail('Olá, Reprograma', email).then(() => {
+        console.log('Email enviado!')
+    }).catch((err) =>
+        console.log(err))
 }
-processosEnvio()
 
-// [2ª] forma de transformar a promise hell em async_await, implementando os console.log
-// para melhor vizualização no console do retorno das promises
+principal();
+
+// [2ª] Uma das formas que tentei transformar a promise hell em async_await, implementando os console.log
+// para melhor vizualização no console do retorno das promises presentes nesse encadeamento.
 
 async function processosEnvio() {
     const id = await pegarId()
