@@ -16,7 +16,7 @@ function pegarId(){
 function buscarEmailNoBanco(id){
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve("jenifer@reprograma.com")
+            resolve("veronicapego76@gmail.com")
         },2000);
     })
 }
@@ -26,25 +26,25 @@ function enviarEmail(corpo, para){
         setTimeout(() => {  
             var deuErro = false;
             if(!deuErro){
-                resolve({time: 6, to: "jenifer@reprograma.com"}) // Promessa OK!
+                resolve({time: 6, to: "veronicapego76@gmail.com"}) // Promessa OK!
             }else{
-                reject("Fila cheia") // Foi mal, eu falhei :(
+                reject("Fila cheia") 
             }
         },4000)
     });
 }
 
 
-// aqui vc pode chamar uma promise dentro de outra(Promisses aninhadas ou Promisse Hell)
-console.log("Inicio!");
-pegarId().then((id) => {
-    buscarEmailNoBanco(id).then((email) => { 
-        enviarEmail("Olá, como vai?",email).then(() => {
-            console.log("Email enviado, para o usuário com id: " + id)
-        }).catch(err => {
-            console.log(err);
-        })
-        
-    })
-})
-console.log("Foi!");
+// aqui >>
+async function email() {
+    try {
+      const id = await pegarId();
+      const emailUsuario = await buscarEmailNoBanco(id);
+      let enviarParaUsuario = enviarEmail(emailUsuario, "Um ótimo dia!");
+      console.log("E-mail enviado com sucesso!");
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  
+  email();
