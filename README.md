@@ -31,7 +31,7 @@ As promessas são baseadas em eventos temporais e possuem alguns estados que cla
 | Fulfilled| Quando executou todas as operações com sucesso.|
 | Rejected | Quando a execução finalizou com erro, falhou.|
 | Settled  | Nome genérico para estado final de executado, independente de ter retornado sucesso ou erro.|
-|
+
 
 Cria-se uma promise a partir da função construtora Promise passando como argumento uma callback que por sua vez recebe como argumentos os dois resultados possíveis para a promise: resolve ou rejeit, duas outras funções que executam o possível sucesso ou erro da promessa, respectivamente:
 
