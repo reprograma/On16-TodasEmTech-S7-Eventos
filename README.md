@@ -70,5 +70,6 @@ As palavra-chaves async e await facilitam a visualização e tornam a leitura do
 
 </span>
 <div align="center">
-<img src="https://giphy.com/embed/HoffxyN8ghVuw" width="400px" />
+<img src="https://user-images.githubusercontent.com/101025726/168203971-39c8b81c-1e82-499e-a89c-d2f3c47b2b23.gif" width="400px" />
+
 </div>
