@@ -3,6 +3,7 @@
 Dica de ouro: Vai ter uma das promises que vc não vai precisar usar await
 */
 
+
 function getId(){
     return new Promise((resolve, reject) => {
         setTimeout(() => {
