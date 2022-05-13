@@ -1,50 +1,42 @@
 
-/* Desafio para casa:  Transformar a nossa promisse Hell em async_await
-Dica de ouro: Vai ter uma das promises que vc não vai precisar usar await
-*/
-
-
-
-function pegarId(){
+function pegarID() {
     return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve(5)   
-        },1500)
-    })
-}
-
-function buscarEmailNoBanco(id){
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve("jenifer@reprograma.com")
-        },2000);
-    })
-}
-
-function enviarEmail(corpo, para){
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {  
-            var deuErro = false;
-            if(!deuErro){
-                resolve({time: 6, to: "jenifer@reprograma.com"}) // Promessa OK!
-            }else{
-                reject("Fila cheia") // Foi mal, eu falhei :(
-            }
-        },4000)
+      setTimeout(() => {
+        resolve(8);
+      }, 1000);
     });
-}
-
-
-// aqui vc pode chamar uma promise dentro de outra(Promisses aninhadas ou Promisse Hell)
-console.log("Inicio!");
-pegarId().then((id) => {
-    buscarEmailNoBanco(id).then((email) => { 
-        enviarEmail("Olá, como vai?",email).then(() => {
-            console.log("Email enviado, para o usuário com id: " + id)
-        }).catch(err => {
-            console.log(err);
-        })
-        
-    })
-})
-console.log("Foi!");
+  }
+  
+  function buscarEmailNoBanco(id) {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve("mari@gmail.com");
+      }, 1000);
+    });
+  }
+  
+  function enviarEmail(corpo, para) {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        let deuErro = false;
+        if (!deuErro) {
+          resolve({ time: 2, to: para, corpo: corpo });
+        } else {
+          reject("A caixa de entrada está cheia.");
+        }
+      }, 1000);
+    });
+  }
+  
+  async function email() {
+    const userId = await pegarID();
+    const endereçoEmail = await buscarEmailNoBanco(userId);
+    const resposta = await enviarEmail("Boa tarde, minha querida!", endereçoEmail);
+    if (resposta.to) {
+      console.log(`E-mail enviado para o usuário com id: ${userId} - ${endereçoEmail}`);
+    } else {
+      console.log("Falha ao enviar e-mail");
+    }
+  }
+  
+  email();
