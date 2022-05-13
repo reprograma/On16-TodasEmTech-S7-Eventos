@@ -2,11 +2,11 @@
 
 **🪐 O que é programação síncrona**
 
-São funções que, quando chamadas, pausam a thread principal (script) para realizar seu processamento, depois retorna o valor final e continua a execução da linha de código na sequência;
+São funções que, quando chamadas, pausam a thread principal (script) para realizar seu processamento, depois retorna o valor final e continua a execução da linha de código na sequência.
 
 **🪐 Programação assíncrona**
 
-Cria uma thread paralela, que será executada em segundo plano sem interromper o fluxo principal, logo toda função que depende de alguma execução externa e/ou possuem timer para retornarem, são executadas em background e ao fim serão retornadas através do Event Loop, tornando possível a continuação do fluxo da aplicação já que não trava o script (thread principal);
+Cria uma thread paralela, que será executada em segundo plano sem interromper o fluxo principal, logo toda função que depende de alguma execução externa e/ou possuem timer para retornarem, são executadas em background e ao fim serão retornadas através do Event Loop, tornando possível a continuação do fluxo da aplicação já que não trava o script (thread principal).
 
 **🪐 Event Loop**
 
@@ -33,12 +33,12 @@ As promessas são baseadas em eventos temporais e possuem alguns estados que cla
 | Settled  | Nome genérico para estado final de executado, independente de ter retornado sucesso ou erro.|
 |
 
-Cria-se uma promise a partir da função construtora Promise passando como argumento uma callback que por sua vez recebe como argumentos os dois resultados possíveis para a promise: resolve ou rejeit, duas outras funções que executam o possível sucesso ou erro da promessa, respectivamente;
+Cria-se uma promise a partir da função construtora Promise passando como argumento uma callback que por sua vez recebe como argumentos os dois resultados possíveis para a promise: resolve ou rejeit, duas outras funções que executam o possível sucesso ou erro da promessa, respectivamente:
 
 * resolve ( ): Função que executa caso a promise seja resolvida;
 * reject ( ): Função que executa caso a promise seja rejeitada;
 
-Resolvemos as promises através de métodos próprios, que chamam as callbacks depois da conclusão da promise
+Resolvemos as promises através de métodos próprios, que chamam as callbacks depois da conclusão da promise:
 
 * then( ): Método que ativa uma callback quando a promise for resolvida, o argumento desta callback é sempre o valor retornado na função resolve( );
 
@@ -51,11 +51,11 @@ Promise Hell é são promessas dentro de outras promessas, Imagina que você pre
 
 **🪐 Async/Await**
 
-Async e await são keywords que foram introduzidas no ES8 em 2017. Basicamente é um syntax sugar (uma firula de linguagem que foi adicionada somente para poder facilitar a escrita) do then e catch .
+Async e await são keywords que foram introduzidas no ES8 em 2017. Basicamente é um syntax sugar (uma firula de linguagem que foi adicionada somente para poder facilitar a escrita) do then e catch.
 
 O motivo pela adição do async/await foi o mesmo da adição das Promises no JavaScript, o callback hell. Só que dessa vez tínhamos o Promise hell, onde ficávamos aninhando Promises dentro de Promises eternamente e isso tornava tudo muito mais difícil de se ler.
 
-A proposta de funções assíncronas é justamente nivelar todo mundo em um único nível
+A proposta de funções assíncronas é justamente nivelar todo mundo em um único nível.
 
 
 
