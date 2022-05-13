@@ -36,7 +36,7 @@ function enviarEmail(corpo, para){
 
 
 // aqui vc pode chamar uma promise dentro de outra(Promisses aninhadas ou Promisse Hell)
-console.log("Inicio!");
+/*console.log("Inicio!");
 pegarId().then((id) => {
     buscarEmailNoBanco(id).then((email) => { 
         enviarEmail("Olá, como vai?",email).then(() => {
@@ -47,4 +47,22 @@ pegarId().then((id) => {
         
     })
 })
-console.log("Foi!");
+console.log("Foi!");*/
+
+//como o async await é utilizado para buscar algum tipo de dado, a terceira função dispensa sua utilização
+
+async function principal() {
+    let id = await pegarId()
+    let email = await buscarEmailNoBanco(id)
+
+    enviarEmail('Exercício entregue.', email).then(() => {
+        console.log('Email enviado com sucesso.')
+
+    }).catch((err) => {
+        console.log((err))
+    })
+}
+
+principal()
+
+// utiliza-se then e catch apenas para validar que o email foi enviado
