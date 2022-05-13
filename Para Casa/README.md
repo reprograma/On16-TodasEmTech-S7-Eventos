@@ -9,8 +9,6 @@ Esta semana aprendemos os conteúdos necessários para a compreensão de program
 
 Também chamado de laço de eventos,  no JavaScript/Node.js isso significa que o fluxo de controle do código é determinado por eventos, executados uma linha por vez em ordem, ou seja, ele pega a tarefa, executa e então espera a próxima tarefa.
 
-<img src="/event-loop.png" alt="event loop"/>
-
 <br>
 
 - **Callbacks :speaking_head:**
