@@ -3,8 +3,6 @@
 Dica de ouro: Vai ter uma das promises que vc não vai precisar usar await
 */
 
-
-
 function pegarId(){
     return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -16,7 +14,7 @@ function pegarId(){
 function buscarEmailNoBanco(id){
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve("jenifer@reprograma.com")
+            resolve("analidialirar@gmail.com")
         },2000);
     })
 }
@@ -26,14 +24,13 @@ function enviarEmail(corpo, para){
         setTimeout(() => {  
             var deuErro = false;
             if(!deuErro){
-                resolve({time: 6, to: "jenifer@reprograma.com"}) // Promessa OK!
+                resolve({time: 6, to: "analidialirar@gmail.com"}) // Promessa OK!
             }else{
                 reject("Fila cheia") // Foi mal, eu falhei :(
             }
         },4000)
     });
 }
-
 
 // aqui vc pode chamar uma promise dentro de outra(Promisses aninhadas ou Promisse Hell)
 console.log("Inicio!");
@@ -48,3 +45,17 @@ pegarId().then((id) => {
     })
 })
 console.log("Foi!");
+
+// RESOLUÇÃO DA ATIVIDADE DE CASA
+async function organizaEnvio(){
+    const id = await pegarId()
+    const email = await buscarEmailNoBanco(id)
+    enviarEmail("Olá, como vai?", email).then(() => {
+        console.log('Email enviado')
+        
+    }).catch((err) => {
+        console.log((err))
+    })
+}
+
+organizaEnvio()
