@@ -1,15 +1,19 @@
+//Exemplo de funcionamento que demonstra o EventLoop
+
+// Importando bibliotecas
 'use strict'  
 const express = require('express')  
 const superagent = require('superagent')  
 const app = express()
 
+//Usando verbo HTTP GET
 app.get('/', EnviarClimaDeCidadeAleatória)
 
 function EnviarClimaDeCidadeAleatória (request, response) {  
   getEnviarClimaDeCidadeAleatória(request, response)
   Ola()
 }
-
+//Lista de Cidades
 const CIDADES = [  
   'osasco',
   'salvador',
@@ -24,8 +28,8 @@ const CIDADES = [
 ]
 
 function getEnviarClimaDeCidadeAleatória (request, response) {  
-  const city = CIDADES[Math.floor(Math.random() * CIDADES.length)]
-  superagent.get(`wttr.in/${city}`)
+  const city = CIDADES[Math.floor(Math.random() * CIDADES.length)] //aplicação de filtros para sorteio de cidades
+  superagent.get(`wttr.in/${city}`) //aplicação de API
     .end((err, res) => {
       if (err) {
         console.log('O snap')
@@ -43,4 +47,8 @@ function Ola () {
   console.log('Olá Reprograma')
 }
 
-app.listen(3000)
+app.listen(3000) //iniciando localhost
+
+/* Nesse grande código, existem  funções dentro de funções, que dependem uma da outra, e que são programadas
+para serem chamadas posteriormente. Permitindo que tenha-se exemplo de Assincronicidade no código, e deste modo
+permitindo visualizar como o node responde a essa assincronidade. */

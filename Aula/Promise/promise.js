@@ -1,10 +1,6 @@
 /*
-Para criar uma promise é bem simples, usa-se o construtor da própria classe e 
-passa-se uma function como único argumento, que possui 
-funções de resolve e reject na sua assinatura. Dentro dessa function, 
-você deve chamar resolve quando sua execução for bem sucedida, ou reject, caso contrário.
+Exemplo de 'promise'. 
 */
-
 
 function soAceitaPares(numero){
     const promise = new Promise( (resolve, reject) => { 
@@ -18,9 +14,11 @@ function soAceitaPares(numero){
                     });
     return promise;
 }
- 
-console.log("promessa");
 
+//teste verificação
+console.log("promessa");
+const result = soAceitaPares(6)
+console.log(result)
 /*
 Essa função retorna uma promise para permitir que seu conteúdo rode de maneira assíncrona. 
 A promise que será retornada avalia o argumento ‘numero’ e se ele for par, 
