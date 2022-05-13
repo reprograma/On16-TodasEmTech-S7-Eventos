@@ -1,22 +1,22 @@
 <h1> 🚀 Event Loop, Callbacks, Promises e Async/Await 🚀 </h1>
 
-🪐 O que é programação síncrona;
+**🪐 O que é programação síncrona**
 
 São funções que, quando chamadas, pausam a thread principal (script) para realizar seu processamento, depois retorna o valor final e continua a execução da linha de código na sequência;
 
-🪐 Programação assíncrona;
+**🪐 Programação assíncrona**
 
 Cria uma thread paralela, que será executada em segundo plano sem interromper o fluxo principal, logo toda função que depende de alguma execução externa e/ou possuem timer para retornarem, são executadas em background e ao fim serão retornadas através do Event Loop, tornando possível a continuação do fluxo da aplicação já que não trava o script (thread principal);
 
-🪐 Event Loop;
+**🪐 Event Loop**
 
 A fila de eventos (Event Loop) é responsável por enviar novas funções que foram resolvidas de forma assíncrona para a trilha principal de processamento (Call Stack), seguindo a estrutura de dados da fila (Callback Queue) assim mantendo a sequência correta de execução dos eventos/funções.
 
-🪐 Callbacks
+**🪐 Callbacks**
 
 A função de retorno de chamada geralmente é usada como parâmetro para outra função. A função que recebe a função de retorno de chamada como parâmetro normalmente está buscando dados de um banco de dados, baixando um arquivo, fazendo uma solicitação de API ou concluindo alguma outra tarefa que poderia bloquear o thread de código por um período de tempo notável.
 
-🪐 Promises;
+**🪐 Promises**
 
 Uma promessa é um objeto que representa algo que estará disponível no futuro. Na programação, esse "algo" são os valores. Promessas propõem que ao invés de esperar pelo valor que queremos, recebamos algo que represente o valor naquele instante para que possamos "continuar com nossas vidas" e depois em algum momento voltar e usar o valor gerado por essa promessa.
 
@@ -49,7 +49,7 @@ Resolvemos as promises através de métodos próprios, que chamam as callbacks d
 Promise Hell é são promessas dentro de outras promessas, Imagina que você precisa encadear várias funções e uma depende da outra.
 
 
-🪐 Async/Await.
+**🪐 Async/Await**
 
 Async e await são keywords que foram introduzidas no ES8 em 2017. Basicamente é um syntax sugar (uma firula de linguagem que foi adicionada somente para poder facilitar a escrita) do then e catch .
 
@@ -60,7 +60,7 @@ A proposta de funções assíncronas é justamente nivelar todo mundo em um úni
 
 
 
-🎯 Referências:
+**🎯 Referências:**
 
 **Github Lilit Bandeira:**  [On15-TodasEmTech S7 JS Assíncrono](https://github.com/lilitbandeira/ON15-TET-S7-ASSINCJS)
 
