@@ -63,19 +63,13 @@ console.log("Bye");
 
 - **Chamada de retorno**;
 
-- Utilizada para não travar o fluxo de execução, as **callbacks** são a maneira mais comum de expressar e gerenciar assincronia em programas JavaScript.
+-  É uma função que é armazenada para ser executadas depois, passada como argumento para outra função, para se realizar uma determinada ação.
 
-- É uma função que é armazenada para ser executadas depois, passada como argumento para outra função, para se realizar uma determinada ação;
-
-- O JavaScript só executa uma coisa por vez e em sequência;
-
-- A ordem de escrita de um código é diferente da ordem que esse código é executado. Portanto, pode-se registrar que se quer esperar algum evento acontecer, enquanto outras coisas são executadas no código de forma linear (síncrona) com uma **callback**;
-
-- Com o Node, por exemplo, o código de uma leitura de arquivos de uma pasta pode demorar bastante para ser executado, dessa forma, não seria interessante que se esperasse essa leitura terminar para realizar o processamento dos outros códigos;
+-  É uma das maneiras  mais comuns de expressar e gerenciar assincronia em programas JavaScript.
 
 4. Promises:
 
-- Também é uma forma de lidar com a assincronicidade, mas, diferente das callbacks, em que se determina o que será chamado depois, a **promise** retorna, de imediato, uma promessa de que no futuro irá se trazer um valor para aquilo.
+- Também é uma forma de lidar com a assincronicidade.
 
 - Cria-se uma função que retorna uma ```new Promise()``` que também passa como argumento uma callback, retornando duas funções _resolve()_ e _reject()_. Então, dada uma promessa, ou se resolve (sucesso da promessa) ou se rejeita (erro da promessa).
 
