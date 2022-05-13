@@ -1,46 +1,59 @@
 
-# On16-TodasEmTech-S7-Eventos
+# **Atividade Semanal 4 - Turma On16** 📚 💻
 
-## Turma Online Todas em Tech - Back-end | Semana 7: Event Loop, Callbacks, Promises e Async/Await
-
-## Combinados:
-
-#### 🤚 Levantar a mão pra falar;
-#### 🤷‍♀️ Dúvidas por favor coloquem no chat;
-#### 🎙 Manter o microfone mutado durante a aula.
-
-### [Slides da aula](https://docs.google.com/presentation/d/1hik5KVEutK7ec1MHRnNEDy5NikDGC8GP/edit?usp=sharing&ouid=103451384479324478678&rtpof=true&sd=true)
-
-## Assuntos em sala: 
-
-#### 📝 O que é programação síncrona;
-#### 📝 Programação assíncrona;
-#### 📝 Event Loop;
-#### 📝 Callbacks;
-#### 📝 Promises;
-#### 📝 Async/Await.
+### **Event Loop, Funções Sícronas e Assíncronas, Callbacks, Promises e Async/Await**
 
 
-### Vamos para a aula? 👩‍💻 
-![monophy](https://media.giphy.com/media/TRUJ0BJOxOmru/giphy.gif)
+---
 
-### Para Casa: 👩‍💻 
+Todos os parâmetros que envolvem os eventos contidos na execução dos códigos tem como principal objetivo a otimização do tempo.
 
-#### 📝 Faça um fork do repositório, faça o desafio da promessa utilizando async / await, sobe a solução para o git e abra um [Pull Request](https://github.com/grupy-sp/encontros/wiki/Como-sincronizar-o-seu-Fork-com-o-repo-principal) com a solução. 
-#### 📝 O Código está na pasta Para Casa.
-#### 📝 Dica de ouro: Vai ter uma das promises que vc não vai precisar usar await.
+## **Event Loop**
 
+Está no escopo do Js como um background de ordenação de execução de funções, fazendo como um controle de filas para a execução dos códigos. 
 
-### Links para estudo 👩‍💻
-### - [Promises](https://medium.com/trainingcenter/entendendo-promises-de-uma-vez-por-todas-32442ec725c2)
+## **Função Assíncrona e Síncrona**
 
-### -  [async/await](https://medium.com/balta-io/nodejs-async-await-21ca3636252a)
+As requisiões síncronas tem sintonia na execução, trabalhando do inicio ao fim em comunicação e dependência. Já as requisiões assíncronas executam o que já está resolvido e depois incluem resultados posteriores, por isso nelas são usadas as Promises e Callbacks.
 
+## **Promise**
 
-## Sucesso Amadxs 🥰
+Levando em consideração a execução assíncrona, as Promises tem o papel de guardar informações de funções ainda não finalizadas para retornar quando estiverem resolvidas. 
 
 
-![monophy](https://user-images.githubusercontent.com/66445871/132948479-b243916d-9fbf-4f84-aec2-07e21374f8e7.gif)
+Estados da Promise  | Descrição
+--------- | ------
+Pending | Quando a Promise não passou pelo processo de ser resolvida (resolve) ou rejected (rejeitada).
+Fulfilled | Quando nossa Promise foi realizada com sucesso
+Rejected | Nesse estado, a Promise é rejeitada, ou seja, a operação falha
+Settled | Quando se dá o resultado da Promise.
+
+Funcionamento assíncrono
+Otimização de tempo
+Exemplo de aplicação: carregamento de imagem em um programa 
+Sintaxe básica:
+
+Métodos de retorno  | Descrição
+--------- | ------
+ .then | é designado apresentar um retorno de sucesso (resolve) para uma Promise.
+ .cacth | é designado apresentar um retorno de erro (reject) para uma Promise.
+
+
+##  **Asyn/Await**
+
+Basicamente usar Async/Await organizará o fluxo de execuções assíncronas. O Await somente será usado quando houver o Async na função.
+
+Esta função tem como caracteristica um código mais limpo, enxuto e mais fácil de ler.
+
+
+##  **CallBack** 
+
+É utilizando como argumento para outra função e geralmente só é executado quando um evento específico ocorre. 
+
+---
+
+##### **Essa atividade faz parte do cronograma da semana 7 da Turma On 16 do bootcamp Todas em Tech {Reprograma}**
+
 
 
 
