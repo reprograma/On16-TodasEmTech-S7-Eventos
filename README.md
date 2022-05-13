@@ -62,11 +62,11 @@ A proposta de funções assíncronas é justamente nivelar todo mundo em um úni
 
 🎯 Referências:
 
-**Github Lilit Bandeira:**  [On15-TodasEmTech-s7-JS-Assíncrono](https://github.com/lilitbandeira/ON15-TET-S7-ASSINCJS)
+**Github Lilit Bandeira:**  [On15-TodasEmTech S7 JS Assíncrono](https://github.com/lilitbandeira/ON15-TET-S7-ASSINCJS)
 
-**Github Jenifer Placido:**  [Turma Online Todas em Tech - Back-end | Semana 7: Event Loop, Callbacks, Promises e Async/Await](https://github.com/reprograma/On16-TodasEmTech-S7-Eventos)
+**Github Jenifer Placido:**  [Todas em Tech - Back-end | Semana 7: Event Loop, Callbacks, Promises e Async/Await](https://github.com/reprograma/On16-TodasEmTech-S7-Eventos)
 
-**Medium por Andre Baltieri:**  [NodeJs — Async/Await](https://medium.com/balta-io/nodejs-async-await-21ca3636252a)
+**Medium por Andre Baltieri:**  [Node.Js — Async/Await](https://medium.com/balta-io/nodejs-async-await-21ca3636252a)
 
 **Medium por Lucas Santos:**  [Entendendo Promises de uma vez por todas](https://medium.com/trainingcenter/entendendo-promises-de-uma-vez-por-todas-32442ec725c2)
 
