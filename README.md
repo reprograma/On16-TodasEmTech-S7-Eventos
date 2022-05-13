@@ -56,7 +56,7 @@ console.log("Bye");
 </p>
   
 <p align="center">
-  <img src="https://miro.medium.com/max/1400/1*TozSrkk92l8ho6d8JxqF_w.gif" alt="Event Loop"/>
+  <img src="https://miro.medium.com/max/1400/1*TozSrkk92l8ho6d8JxqF_w.gif" alt="Event Loop" width="600"/>
 </p>
 
 3. Callbacks:
@@ -137,5 +137,5 @@ readFile("./xFile.txt")
 --- 
 
 <p align="center">
-  <img src="https://c.tenor.com/YAOhbZ5GZy4AAAAd/nazaré.gif" alt="Gif Nazare"/>
+  <img src="https://c.tenor.com/YAOhbZ5GZy4AAAAd/nazaré.gif" alt="Gif Nazare" width="600"/>
 </p>
