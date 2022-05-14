@@ -10,20 +10,20 @@ function buscarEmailNoBanco(id){
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve("jenifer@reprograma.com")
-        },2000);
+        },2000)
     })
 }
 
 function enviarEmail(corpo, para){
     return new Promise((resolve, reject) => {
         setTimeout(() => {  
-            var deuErro = false;
+            var deuErro = false
             if(!deuErro){
                 resolve({time: 6, to: "jenifer@reprograma.com"}) 
                 reject("Fila cheia")
             }
         },4000)
-    });
+    })
 }
 
 function buscarUsuario(){
@@ -42,7 +42,7 @@ function buscarUsuario(){
 async function email(){
 	try{
 const id = await pegarId()
-const emailDoUsuario = await buscarEmailNoBanco(id)/
+const emailDoUsuario = await buscarEmailNoBanco(id)
 const enviarParaUsuario = await 
 
 console.log("Email enviado!")
