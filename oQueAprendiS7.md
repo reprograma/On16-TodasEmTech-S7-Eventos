@@ -42,8 +42,9 @@ Para acessar o valor da promisse, é preciso usar o <em> .then e .catch</em> em 
 Possibilita que se escreva uma função baseada em Promise como se fosse síncrono, numa sintaxe mais confortável e legível.
 <br>
 
-![](async.gif)
+![](easy.gif)
 
 -----
 <br>
 Os exemplos e sintaxes que demonstram a teoria acima pode ser encontrada nas pastas 'Aula' e 'paraCasa'. 
+
