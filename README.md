@@ -3,9 +3,11 @@
 
 ## Turma Online Todas em Tech - Back-end | Semana 7: Event Loop, Callbacks, Promises e Async/Await
 
-## Assuntos em sala: 
+<br/>
 
-<iframe src="https://giphy.com/embed/NXp9HM6YeuS0U" width="480" height="319" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/computer-dancing-happy-NXp9HM6YeuS0U">via GIPHY</a></p>
+![tenor](https://user-images.githubusercontent.com/83047619/165827234-9f070d42-9dd5-435f-ace2-417783ce2e8f.gif)
+
+<br/>
 
 #### 📝 O que é programação síncrona;
 
@@ -14,11 +16,15 @@ Ao execurtarmos um código, ele pode processar os seus dados de duas formas: sí
 A forma síncrona é o método padrão do JavaScrip rodar os seus códido, ou seja, a sua leitura costuma ocorrer linha a linha de cima para baixo. Por exemplo, ao processarmos o código abaixo ele irá seguir a ordem escrita:
 
 > **Código:**
+
 > console.log("Linha número 01")
+
 > console.log("Linha número 02")
 
 > **Saída:**
+
 > Linha número 01
+
 > Linha número 02
 
 #### 📝 Programação assíncrona;
@@ -26,6 +32,7 @@ A forma síncrona é o método padrão do JavaScrip rodar os seus códido, ou se
 A forma assíncrona costuma ocorrer quando a execução dos módulos do programa não ocorrem de modo sequencial. Alguns trechos podem não ser executados instanteneamente, com necessidade de aguardar o retorno de alguns dados, nesse caso, é necessário esperar que sejam concluídos para que posteriormente sejam processados. Logo os códidos serão processado de forma assíncronas, ou seja, não seguirão a ordem das linhas. Por exemplo:
 
 > **Código:**
+
 >console.log("Pimeira linha")
 >
 >setTimeout(() => {
@@ -35,15 +42,17 @@ A forma assíncrona costuma ocorrer quando a execução dos módulos do programa
 >console.log("Terceira linha")
 
 > **Saída:**
+
 >Pimeira linha
+
 >Terceira linha
+
 >Segunda linha
 
 #### 📝 Event Loop;
 
 O Event Loop, ou laço de repetição de eventos, é um padrão de arquitetura que controla o fluxo de operações, requisições e ações de um código de forma assincrona, diferentemente de outras arquiteturas onde um código executa uma ação e termina. No event loop, existe o conceito do event, que pode ser uma requisição http, uma consulta ao banco de dados, dentre outras, esse event é controlado por um handler que se comunica com outros events e assegura que o fluxo não seja interrompido caso um event demore mais do que o esperado.
 
-<iframe src="https://giphy.com/embed/xThuWu82QD3pj4wvEQ" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/xThuWu82QD3pj4wvEQ">via GIPHY</a></p>
 
 #### 📝 Callbacks;
 
