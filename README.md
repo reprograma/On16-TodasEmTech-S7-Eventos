@@ -82,7 +82,8 @@ Uma promise pode assumir quatro estados principais:
 
 - **Settled(resolvida) :**  a ação foi atendida ou rejeitada.
 
-![entendendo](./imagens/entendendoPromises.jpg)
+![entendendo](/Imagens/entendendoPromises.jpg)
+
 
 ### Construindo uma promise
 
@@ -132,7 +133,7 @@ let promise = new Promise((resolve, reject) => {
 
 Resolvemos as promises através de métodos próprios, que chamam as callbacks depois da conclusão da promise. Que pode ser sido resolvida com sucesso ou rejeitada. Para isso, você utiliza o then e o catch.
 
-![usando](./imagens/usandoPromises.jpg)
+![usando](/Imagens/usandoPromises.jpg)
 
 - **Then( ):** Método que ativa uma callback quando a promise for resolvida, o argumento desta callback é sempre o valor retornado na função resolve().
 
