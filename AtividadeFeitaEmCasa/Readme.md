@@ -1,4 +1,4 @@
-# Semana 7 - EventLoop, Callbacks, Promises e Async/Awit
+*Semana 7 - EventLoop, Callbacks, Promises e Async/Awit*
 
 Anterior a todos os conceitos, o entendimento de que o Node.JS tem dois modos de leitura do código, foi um princípio norteador para o entendimento dos eventos. A forma de leitura de funções síncronas significa que o Node irá aguardar que cada uma das funções abertas sejam processadas e exibam seus resultados para que a próxima parte do código seja lida, no sentido de cima para baixo; Já na leitura de funções assíncronas o Node continuará lendo o código independente da finalização daquele processo aberto pelas funções. Segue-se então: 
 
