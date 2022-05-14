@@ -48,3 +48,22 @@ pegarId().then((id) => {
     })
 })
 console.log("Foi!");
+
+
+
+//resposta:
+async function principal(){
+    const id = await pegarId()
+    const emailUsuario = await buscarEmailNoBanco(id)
+    enviarEmail('Olá, como vai?', emailUsuario).then(()=>{
+        console.log('email enviado!')
+
+    }).catch((err)=>{
+
+        console.log((err))
+        
+    })
+
+}
+
+principal()
