@@ -37,14 +37,17 @@ function enviarEmail(corpo, para){
 
 // aqui vc pode chamar uma promise dentro de outra(Promisses aninhadas ou Promisse Hell)
 console.log("Inicio!");
-pegarId().then((id) => {
-    buscarEmailNoBanco(id).then((email) => { 
-        enviarEmail("Olá, como vai?",email).then(() => {
+
+
+async function email(){
+    try{
+const id = await pegarId()
+    const emailDoUsuario = await buscarEmailNoBanco(id) 
+        let enviarEmailParaUsuario = enviarEmail(emailDoUsuario,"ola sou alexsandra")
             console.log("Email enviado, para o usuário com id: " + id)
-        }).catch(err => {
-            console.log(err);
-        })
+        }catch(error){
+            console.log(error)
+        }
         
-    })
-})
-console.log("Foi!");
+    }
+ email()
