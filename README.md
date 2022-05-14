@@ -1,15 +1,7 @@
+Esta semana, teve bastante conteúdo não vou dizer que aprendir tudo, mais conseguir absorver alguns assuntos que com a prática fui tendo mas entendimento do assunto.
+Aprendir que uma programação assíncrona, nada mais é, que um fluxode execução de um programa, ela permite que você continue com a execução do seu programa na thread principal enquanto uma tarefa de longa duração é executada na sua própria thread separadamente da thread  principal.
+Callback é usado dentro da função externa para completar algum tipo de rotina ou ação. Aprendemos sobre os verbos HTTP mais utilizados promise é um objeto usado para processamento assíncrono. Com a prática irei desenvolver mais rápido porque na teoria são muitos conteúdos.
 
-# On16-TodasEmTech-S7-Eventos
-
-## Turma Online Todas em Tech - Back-end | Semana 7: Event Loop, Callbacks, Promises e Async/Await
-
-## Combinados:
-
-#### 🤚 Levantar a mão pra falar;
-#### 🤷‍♀️ Dúvidas por favor coloquem no chat;
-#### 🎙 Manter o microfone mutado durante a aula.
-
-### [Slides da aula](https://docs.google.com/presentation/d/1hik5KVEutK7ec1MHRnNEDy5NikDGC8GP/edit?usp=sharing&ouid=103451384479324478678&rtpof=true&sd=true)
 
 ## Assuntos em sala: 
 
