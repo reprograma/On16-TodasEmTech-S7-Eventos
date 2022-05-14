@@ -1,8 +1,3 @@
-
-// Desafio para casa:  Transformar a nossa promisse Hell em async_await
-// Dica de ouro: Vai ter uma das promises que vc não vai precisar usar await
-
-
 function pegarId(){
     return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -24,9 +19,8 @@ function enviarEmail(corpo, para){
         setTimeout(() => {  
             var deuErro = false;
             if(!deuErro){
-                resolve({time: 6, to: "jenifer@reprograma.com"})
-            }else{
-                reject("Fila cheia") 
+                resolve({time: 6, to: "jenifer@reprograma.com"}) 
+                reject("Fila cheia")
             }
         },4000)
     });
@@ -40,6 +34,7 @@ function buscarUsuario(){
             {name: "Lima", lang: "Python"},
             {name: "Plácido", lang: "Java"}
         ])
+
    },3000)
 })
 }
@@ -47,7 +42,7 @@ function buscarUsuario(){
 async function email(){
 	try{
 const id = await pegarId()
-const emailDoUsuario = await buscarEmailNoBanco(id)
+const emailDoUsuario = await buscarEmailNoBanco(id)/
 const enviarParaUsuario = await 
 
 console.log("Email enviado!")
