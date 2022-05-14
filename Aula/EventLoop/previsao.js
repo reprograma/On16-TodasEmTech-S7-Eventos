@@ -1,15 +1,19 @@
+/* express  e o superagent são bibliotecas do node, observe que as bibliotecas sao declaradas utilizando o require e entre parenteses ('express)
+obs: superagent e para chamar a requisição
+*/
 'use strict'  
 const express = require('express')  
 const superagent = require('superagent')  
 const app = express()
-
+// indica a rota declara utilizando a barra apos o declarar app.get - get retorna
 app.get('/', EnviarClimaDeCidadeAleatória)
 
+/* */
 function EnviarClimaDeCidadeAleatória (request, response) {  
   getEnviarClimaDeCidadeAleatória(request, response)
   Ola()
 }
-
+// variavel cidades
 const CIDADES = [  
   'osasco',
   'salvador',
@@ -23,6 +27,7 @@ const CIDADES = [
   'capetown',
 ]
 
+// fara um sorteio das cidades
 function getEnviarClimaDeCidadeAleatória (request, response) {  
   const city = CIDADES[Math.floor(Math.random() * CIDADES.length)]
   superagent.get(`wttr.in/${city}`)
@@ -42,5 +47,6 @@ function getEnviarClimaDeCidadeAleatória (request, response) {
 function Ola () {  
   console.log('Olá Reprograma')
 }
-
-app.listen(3000)
+ // para rodar tem que verificar a porta disponivel
+ // para rodar na maquina acesse  abaixe o TERMINAL  E digite npm i express fs superagent
+app.listen(8080)
