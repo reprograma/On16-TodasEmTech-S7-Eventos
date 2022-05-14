@@ -3,45 +3,68 @@
 
 ## Turma Online Todas em Tech - Back-end | Semana 7: Event Loop, Callbacks, Promises e Async/Await
 
-## Combinados:
-
-#### 🤚 Levantar a mão pra falar;
-#### 🤷‍♀️ Dúvidas por favor coloquem no chat;
-#### 🎙 Manter o microfone mutado durante a aula.
-
-### [Slides da aula](https://docs.google.com/presentation/d/1hik5KVEutK7ec1MHRnNEDy5NikDGC8GP/edit?usp=sharing&ouid=103451384479324478678&rtpof=true&sd=true)
-
 ## Assuntos em sala: 
 
+<iframe src="https://giphy.com/embed/NXp9HM6YeuS0U" width="480" height="319" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/computer-dancing-happy-NXp9HM6YeuS0U">via GIPHY</a></p>
+
 #### 📝 O que é programação síncrona;
+
+Ao execurtarmos um código, ele pode processar os seus dados de duas formas: síncrona e assíncrona.
+
+A forma síncrona é o método padrão do JavaScrip rodar os seus códido, ou seja, a sua leitura costuma ocorrer linha a linha de cima para baixo. Por exemplo, ao processarmos o código abaixo ele irá seguir a ordem escrita:
+
+> **Código:**
+> console.log("Linha número 01")
+> console.log("Linha número 02")
+
+> **Saída:**
+> Linha número 01
+> Linha número 02
+
 #### 📝 Programação assíncrona;
+
+A forma assíncrona costuma ocorrer quando a execução dos módulos do programa não ocorrem de modo sequencial. Alguns trechos podem não ser executados instanteneamente, com necessidade de aguardar o retorno de alguns dados, nesse caso, é necessário esperar que sejam concluídos para que posteriormente sejam processados. Logo os códidos serão processado de forma assíncronas, ou seja, não seguirão a ordem das linhas. Por exemplo:
+
+> **Código:**
+>console.log("Pimeira linha")
+>
+>setTimeout(() => {
+>            console.log("Segunda linha")
+>        },2000);
+>
+>console.log("Terceira linha")
+
+> **Saída:**
+>Pimeira linha
+>Terceira linha
+>Segunda linha
+
 #### 📝 Event Loop;
+
+O Event Loop, ou laço de repetição de eventos, é um padrão de arquitetura que controla o fluxo de operações, requisições e ações de um código de forma assincrona, diferentemente de outras arquiteturas onde um código executa uma ação e termina. No event loop, existe o conceito do event, que pode ser uma requisição http, uma consulta ao banco de dados, dentre outras, esse event é controlado por um handler que se comunica com outros events e assegura que o fluxo não seja interrompido caso um event demore mais do que o esperado.
+
+<iframe src="https://giphy.com/embed/xThuWu82QD3pj4wvEQ" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/xThuWu82QD3pj4wvEQ">via GIPHY</a></p>
+
 #### 📝 Callbacks;
+
+Callbacks são um tipo específico de função que funciona como parâmetro de outra função e são retornadas por estas. Normalmente são usadas para continuar a execução do código após uma operação assíncrona.
+Quando utilizadas como parâmetro costumas vim no formato de *arrow function*.
+
 #### 📝 Promises;
+
+As *promises* foram implentadas no JavaScript ES7 onde antes usava-se funções *callbacks*. 
+São utilizadas como um *proxy* para resultados que, inicialmente, são desconhecidos devido a sua computação não estar completa no momento da chamada.
+
+Toda *primises* pode ser resolvida ter sucesso (resolvida) ou não (erro), ou seja, ela sempre retornará um método *.then* ou um *.cath*. Utilizamos o *.then* para tratar quando queremos **resolver** a *promises* e o *.cath* quando queremos tratar os erros de uma *promises* **rejeitada**.
+
+Toda *primises* pode assumir 4 estados:
+  1. *Pending*: Foi iniciada, mas não foi realizada nem rejeitada.
+  2. *Fulfilled*: Promises **resolvida**.
+  3. *Rejected*: Promises **rejeitada**.
+  4. *Settled*: Estado final quando já sabemos se foi **resolvida** ou **rejeitada**
+
 #### 📝 Async/Await.
 
+O **Async/Await** surgiu com o ojetivo de simplificar situações em que temos várias *promises* encadeadas com uma dependente da outra. Ele permite que aguardemos as chamadas a métodos assíncronos antes de prosseguir.
 
-### Vamos para a aula? 👩‍💻 
-![monophy](https://media.giphy.com/media/TRUJ0BJOxOmru/giphy.gif)
-
-### Para Casa: 👩‍💻 
-
-#### 📝 Faça um fork do repositório, faça o desafio da promessa utilizando async / await, sobe a solução para o git e abra um [Pull Request](https://github.com/grupy-sp/encontros/wiki/Como-sincronizar-o-seu-Fork-com-o-repo-principal) com a solução. 
-#### 📝 O Código está na pasta Para Casa.
-#### 📝 Dica de ouro: Vai ter uma das promises que vc não vai precisar usar await.
-
-
-### Links para estudo 👩‍💻
-### - [Promises](https://medium.com/trainingcenter/entendendo-promises-de-uma-vez-por-todas-32442ec725c2)
-
-### -  [async/await](https://medium.com/balta-io/nodejs-async-await-21ca3636252a)
-
-
-## Sucesso Amadxs 🥰
-
-
-![monophy](https://user-images.githubusercontent.com/66445871/132948479-b243916d-9fbf-4f84-aec2-07e21374f8e7.gif)
-
-
-
-
+<a href="https://ibb.co/WPpqVZQ"><img src="https://i.ibb.co/WPpqVZQ/OctoCat3.jpg" alt="OctoCat3" border="0"></a>
