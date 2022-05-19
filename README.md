@@ -1,5 +1,5 @@
 
-# **Atividade Semanal 4 - Turma On16** 📚 💻
+# **Atividade Semanal 7 - Turma On16** 📚 💻
 
 ### **Event Loop, Funções Sícronas e Assíncronas, Callbacks, Promises e Async/Await**
 
