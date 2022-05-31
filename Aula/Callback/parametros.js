@@ -11,7 +11,7 @@ function enviarEmail(corpo, para, callback){
         ---------------------------------------
         ${corpo}
         ---------------------------------------
-        De: Jenifer Plácido
+        De: Nilva Pires
         `)
         callback("OK", 40, "2s");
     }, 2000)

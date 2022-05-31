@@ -1,19 +1,23 @@
-/* express  e o superagent são bibliotecas do node, observe que as bibliotecas sao declaradas utilizando o require e entre parenteses ('express)
+/* express  e o superagent são bibliotecas do node, observe que as bibliotecas são declaradas utilizando o require e entre parenteses e aspas simples ('express')
 obs: superagent e para chamar a requisição
 */
 'use strict'  
-const express = require('express')  
-const superagent = require('superagent')  
-const app = express()
-// indica a rota declara utilizando a barra apos o declarar app.get - get retorna
+const express = require('express')// biblioteca para acessar o localhost
+const superagent = require('superagent') //chama API da previsão tempo 
+const app = express()// chama a biblioteca express
+// indica a rota declara utilizando a barra apos  declarar app.get - get retorna
 app.get('/', EnviarClimaDeCidadeAleatória)
+/*get(): Esta função informa ao servidor o que fazer quando receber requests em uma determinada rota. Ele pode ser usado para tornar as rotas modulares (como expor um conjunto de rotas de um módulo npm que outros aplicativos da web podem usar).*/
 
-/* */
+/* EXEMPLO: retornar o resultado de (Enviar clima de cidade aleatoria)
+('/') barra indica que e para rodar no localhost aplicação local.
+
+/*criando uma função que retorna um request e um response */
 function EnviarClimaDeCidadeAleatória (request, response) {  
   getEnviarClimaDeCidadeAleatória(request, response)
   Ola()
 }
-// variavel cidades
+// Criando um Array de cidades
 const CIDADES = [  
   'osasco',
   'salvador',
@@ -27,7 +31,7 @@ const CIDADES = [
   'capetown',
 ]
 
-// fara um sorteio das cidades
+// Esta função fará um sorteio das cidades
 function getEnviarClimaDeCidadeAleatória (request, response) {  
   const city = CIDADES[Math.floor(Math.random() * CIDADES.length)]
   superagent.get(`wttr.in/${city}`)
@@ -41,7 +45,7 @@ function getEnviarClimaDeCidadeAleatória (request, response) {
       console.log('Previsão confirmada!')
     })
 
-  console.log('Obtendo a previsão do tempo, aguarde.')
+  console.log('Obtendo a previsão do tempo, aguarde por gentileza.')
 }
 
 function Ola () {  
@@ -49,4 +53,4 @@ function Ola () {
 }
  // para rodar tem que verificar a porta disponivel
  // para rodar na maquina acesse  abaixe o TERMINAL  E digite npm i express fs superagent
-app.listen(8080)
+app.listen(3000)
