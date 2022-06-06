@@ -43,11 +43,16 @@ Aplicações NPM tais como:
 * setTimeout
 * Sempre Utilizando o terminal Githere. 
  
-* CRIAMOS UMA API PARA RETORNAR O CLIMA DO TEMPO
-<img align="right" alt="GIF" src="<a href="https://ibb.co/V94ZxsV"><img src="https://i.ibb.co/9g5Lh7n/tela-previsao.png" alt="tela-previsao" border="0"></a>" width="400px" />
+* CRIAMOS UMA API PARA RETORNAR O CLIMA DO TEMPO  ✨
+<img align="right" img src="https://i.ibb.co/9g5Lh7n/tela-previsao.png" alt="tela-previsao" border="0">
 
 
-** ⭐Linguagens e ferramentas:**  
+
+
+
+
+&nbsp;
+ ⭐Linguagens e ferramentas:**  
 
 <p align="left">
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> 
