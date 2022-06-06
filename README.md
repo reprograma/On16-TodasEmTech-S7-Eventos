@@ -26,15 +26,25 @@
 </a><br />
 
 
-<p align="left"> Nos exercicios foram aplicados ✍:<br/></p></br>
-- Instalação 1 - npm init, 2 - npm i e  3 - npm i express fs superagent
-- Criar um event loop e sua aplicabilidade;
-- usar express, superagent, app.get , require.
-- setTimeout
-*Utilizar o terminal com NODEJS 
- 
+```` Nos exercicios foram aplicados. ✍:````
 
-<img align="right" alt="GIF" src="https://octocat-generator-assets.githubusercontent.com/my-octocat-1615670651576.png" width="400px" />
+Aplicações NPM tais como: 
+
+ * npm init;
+ &nbsp;
+* npm install;
+ &nbsp;
+* npm i express fs superagent;
+ &nbsp;
+* Criar um event loop e sua aplicabilidade;
+&nbsp;
+* Usar express, superagent, app.get , require;
+&nbsp;
+* setTimeout
+* Sempre Utilizando o terminal Githere. 
+ 
+* CRIAMOS UMA API PARA RETORNAR O CLIMA DO TEMPO
+<img align="right" alt="GIF" src="<a href="https://ibb.co/V94ZxsV"><img src="https://i.ibb.co/9g5Lh7n/tela-previsao.png" alt="tela-previsao" border="0"></a>" width="400px" />
 
 
 ** ⭐Linguagens e ferramentas:**  
